@@ -3,7 +3,7 @@
     "version": "1.0.68",
     "attributes": {
         "Category": "Solution",
-        "Pipeline Type": "MLOps",
+        "Solution Type": "MLOps",
         "Provider": "Dataloop",
         "Media Type": ["All Media Types"]
     },
@@ -25,7 +25,7 @@
         }
     ],
     "variables": {
-        "ground_truth__dataset": "ml-compare-example.datasets.V2 Plant Seedlings Dataset",
-        "best_model__model": "resnet.models.pretrained-resnet"
+        "Ground Truth Dataset__dataset": "ml-compare-example.datasets.V2 Plant Seedlings Dataset",
+        "Best Model__model": "resnet.models.pretrained-resnet"
     }
 }
