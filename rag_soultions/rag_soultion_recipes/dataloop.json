@@ -1,0 +1,31 @@
+{
+  "name": "rag-template-solution-recipes",
+  "version": "1.0.68",
+  "attributes": {
+    "Category": "Solution",
+    "Solution Type": "GenAI",
+    "Provider": "Dataloop",
+    "Media Type": [
+      "Text"
+    ]
+  },
+  "displayName": "RAG template Solution Recipes",
+  "description": "This solution implements the RAG template, utilizing OpenAI's text embedder for query embedding, retrieving relevant documents, and using ChatGPT to generate context-aware responses. It preloads a recipes dataset as the source for document retrieval.",
+  "scope": "public",
+  "codebase": {
+    "type": "git",
+    "gitUrl": "https://github.com/dataloop-ai-apps/solution-applications.git",
+    "gitTag": "1.0.68"
+  },
+  "dependencies": [
+    {
+      "name": "rag-template-remove-rag-example"
+    },
+    {
+      "name": "dataset-text-recipes"
+    }
+  ],
+  "variables": {
+    "sourceDataset__dataset": "dataset-text-recipes.datasets.Recipes Text Dataset"
+  }
+}
