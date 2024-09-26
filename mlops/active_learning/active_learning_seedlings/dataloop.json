@@ -1,0 +1,31 @@
+{
+    "name": "active-learning-soln-seedlings",
+    "version": "1.0.68",
+    "attributes": {
+        "Category": "Solution",
+        "Solution Type": "MLOps",
+        "Provider": "Dataloop",
+        "Media Type": ["All Media Types"]
+    },
+    "displayName": "Active Learning Example Seedlings",
+    "description": "Automate the iterative process of fine-tuning your model, covering labeling, model creation, training, evaluation, and deployment of the best version. Pre-loaded with a dataset and model.",
+    "scope": "public",
+    "codebase": {
+        "type": "git",
+        "gitUrl": "https://github.com/dataloop-ai-apps/pipeline-templates.git",
+        "gitTag": "1.0.68"
+    },
+    "components": {},
+    "dependencies": [
+        {
+            "name": "active-learning-template"
+        },
+        {
+            "name": "ml-compare-example"
+        }
+    ],
+    "variables": {
+        "Ground Truth Dataset__dataset": "ml-compare-example.datasets.V2 Plant Seedlings Dataset",
+        "Best Model__model": "resnet.models.pretrained-resnet"
+    }
+}

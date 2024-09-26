@@ -9,7 +9,7 @@
       "Text"
     ]
   },
-  "displayName": "RAG template Solution Recipes",
+  "displayName": "RAG template - Recipes",
   "description": "This solution implements the RAG template, utilizing OpenAI's text embedder for query embedding, retrieving relevant documents, and using ChatGPT to generate context-aware responses. It preloads a recipes dataset as the source for document retrieval.",
   "scope": "public",
   "codebase": {
