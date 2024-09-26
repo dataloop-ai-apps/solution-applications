@@ -25,7 +25,7 @@
         }
     ],
     "variables": {
-        "Ground Truth Dataset__dataset": "ml-compare-example.datasets.V2 Plant Seedlings Dataset",
-        "Best Model__model": "resnet.models.pretrained-resnet"
+        "ground_truth__dataset": "ml-compare-example.datasets.V2 Plant Seedlings Dataset",
+        "best_model__model": "resnet.models.pretrained-resnet"
     }
 }
