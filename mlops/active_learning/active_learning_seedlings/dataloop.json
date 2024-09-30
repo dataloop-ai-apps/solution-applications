@@ -22,10 +22,13 @@
         },
         {
             "name": "ml-compare-example"
+        },
+        {
+            "name": "v2-plant-seedlings-dataset-raw"
         }
     ],
     "variables": {
-        "Raw Dataset__dataset": "ml-compare-example.datasets.V2 Plant Seedlings Dataset",
+        "Raw Dataset__dataset": "v2-plant-seedlings-dataset-raw.datasets.V2 Plant Seedlings Dataset Raw",
         "Ground Truth Dataset__dataset": "ml-compare-example.datasets.V2 Plant Seedlings Dataset",
         "Best Model__model": "resnet.models.pretrained-resnet"
     }
