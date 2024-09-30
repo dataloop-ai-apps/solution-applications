@@ -21,12 +21,12 @@
             "name": "active-learning-template"
         },
         {
-            "name": "ml-compare-example"
+            "name": "ml-compare-solution"
         }
     ],
     "variables": {
-        "Raw Dataset__dataset": "ml-compare-example.datasets.V2 Plant Seedlings Dataset",
-        "Ground Truth Dataset__dataset": "ml-compare-example.datasets.V2 Plant Seedlings Dataset",
+        "Raw Dataset__dataset": "ml-compare-solution.datasets.V2 Plant Seedlings - Unannotated",
+        "Ground Truth Dataset__dataset": "ml-compare-solution.datasets.V2 Plant Seedlings - Annotated",
         "Best Model__model": "resnet.models.pretrained-resnet"
     }
 }
