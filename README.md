@@ -1,20 +1,13 @@
-# Pipeline Templates Repository
+# Pipelines Solutions Repository
 
 ### Table of Contents:
 
-#### Document Preprocessing:
-
-#### Image Preprocessing:
-
-#### Labeling Workflows:
-
-#### MLOPS:
+#### MLOps:
 - [Active Learning Example: Seedlings](mlops/active_learning/active_learning_seedlings/README.md)
 
 #### RAG:
 - [RAG Example: Recipes](mlops/active_learning/active_learning_seedlings/README.md)
 
-#### Tiling:
 
 ## Contributions, Bugs and Issues - How to Contribute
 
