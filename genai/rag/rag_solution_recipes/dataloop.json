@@ -1,0 +1,78 @@
+{
+  "name": "rag-solution-openai-recipes",
+  "version": "1.0.68",
+  "attributes": {
+    "Category": "Solution",
+    "Solution Type": "GenAI",
+    "Provider": "Dataloop",
+    "Media Type": [
+      "Text"
+    ]
+  },
+  "displayName": "RAG template - Recipes",
+  "description": "This solution implements the RAG template, utilizing OpenAI's text embedder for query embedding, retrieving relevant documents, and using ChatGPT to generate context-aware responses. It preloads a recipes dataset as the source for document retrieval.",
+  "scope": "public",
+  "codebase": {
+    "type": "git",
+    "gitUrl": "https://github.com/dataloop-ai-apps/solution-applications.git",
+    "gitTag": "1.0.68"
+  },
+  "dependencies": [
+    {
+      "name": "rag-template"
+    },
+    {
+      "name": "dataset-text-recipes"
+    },
+    {
+      "name": "text-embeddings-3",
+      "components": {
+        "models": [
+          {
+            "name": "openai-text-embeddings-3l",
+            "configuration": {
+              "model_name": "text-embedding-3-large",
+              "featureSetName": "openai-text-embeddings-3l",
+              "embeddings_size": 256
+            }
+          },
+          {
+            "name": "openai-prompt-embeddings-3l",
+            "configuration": {
+              "model_name": "text-embedding-3-large",
+              "embeddings_size": 256,
+              "hyde_model_name": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "chat-completion",
+      "components": {
+        "models": [
+          {
+            "name": "openai-gpt-4o",
+            "configuration": {
+              "system_prompt": "You are an AI assistant designed to answer questions using a provided set of documents. Your primary goal is to deliver precise and accurate responses, citing the relevant document sources for each answer. If the documents do not contain the necessary information, inform the user accordingly. Maintain a friendly and professional demeanor in all interactions.",
+              "model_name": "gpt-4o",
+              "add_metadata": [
+                "system.document.source"
+              ],
+              "stream": true,
+              "max_tokens": 4096,
+              "temperature": 1.0,
+              "top_p": 1.0
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "variables": {
+    "sourceDataset__dataset": "dataset-text-recipes.datasets.Recipes Text Dataset",
+    "embedderRetriever__model": "text-embeddings-3.models.openai-text-embeddings-3l",
+    "genModel__model": "chat-completion.models.openai-gpt-4o",
+    "embedder__model": "text-embeddings-3.models.openai-prompt-embeddings-3l"
+  }
+}
