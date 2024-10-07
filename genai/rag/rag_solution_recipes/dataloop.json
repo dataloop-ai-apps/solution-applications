@@ -35,6 +35,14 @@
               "featureSetName": "openai-text-embeddings-3l",
               "embeddings_size": 256
             }
+          },
+          {
+            "name": "openai-prompt-embeddings-3l",
+            "configuration": {
+              "model_name": "text-embedding-3-large",
+              "embeddings_size": 256,
+              "hyde_model_name": ""
+            }
           }
         ]
       }
