@@ -19,7 +19,7 @@
   },
   "dependencies": [
     {
-      "name": "rag-template-remove-rag-example"
+      "name": "rag-template"
     },
     {
       "name": "dataset-text-recipes"
