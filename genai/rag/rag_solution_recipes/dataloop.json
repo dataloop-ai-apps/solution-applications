@@ -25,7 +25,19 @@
       "name": "dataset-text-recipes"
     },
     {
-      "name": "text-embeddings-3"
+      "name": "text-embeddings-3",
+      "components": {
+        "models": [
+          {
+            "name": "openai-text-embeddings-3l",
+            "configuration": {
+              "model_name": "text-embedding-3-large",
+              "featureSetName": "openai-text-embeddings-3l",
+              "embeddings_size": 256
+            }
+          }
+        ]
+      }
     },
     {
       "name": "chat-completion",
