@@ -6,7 +6,7 @@
 - [Active Learning Example: Seedlings](mlops/active_learning/active_learning_seedlings/README.md)
 
 #### RAG:
-- [RAG Example: Recipes](mlops/active_learning/active_learning_seedlings/README.md)
+- [RAG Example: Recipes](genai/rag/rag_solution_recipes/README.md)
 
 
 ## Contributions, Bugs and Issues - How to Contribute
