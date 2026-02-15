@@ -7,6 +7,7 @@
 
 #### RAG:
 - [RAG Example: Recipes](genai/rag/rag_solution_recipes/README.md)
+- [NIM RAG Example: Recipes](genai/rag/nim_rag_solution_recipes/README.md)
 
 
 ## Contributions, Bugs and Issues - How to Contribute
