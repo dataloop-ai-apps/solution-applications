@@ -25,14 +25,14 @@
       "name": "nim-dataset-text-recipes"
     },
     {
-      "name": "nim-nv-embedqa-e5-v5",
+      "name": "nim-llama-3-2-nemoretriever-300m-embed-v2",
       "components": {
         "models": [
           {
-            "name": "nim-nv-embedqa-e5-v5",
+            "name": "nim-llama-3-2-nemoretriever-300m-embed-v2",
             "configuration": {
-              "nim_model_name": "nvidia/nv-embedqa-e5-v5",
-              "embeddings_size": 1024,
+              "nim_model_name": "nvidia/llama-3.2-nemoretriever-300m-embed-v2",
+              "embeddings_size": 2048,
               "hyde_model_name": "",
               "base_url": "https://integrate.api.nvidia.com/v1"
             }
@@ -41,20 +41,23 @@
       }
     },
     {
-      "name": "nim-llama-3-1-405b-instruct",
+      "name": "nim-llama-3-1-8b-instruct",
       "components": {
         "models": [
           {
-            "nim_model_name": "meta/llama-3.1-405b-instruct",
-            "max_tokens": 512,
-            "temperature": 0.2,
-            "top_p": 0.7,
-            "stream": true,
-            "base_url": "https://integrate.api.nvidia.com/v1",
-            "system_prompt": "You are a helpful and a bit cynical assistant. Give relevant and short answers, if you dont know the answer just say it, dont make up an answer",
-            "add_metadata": [
-              "system.document.source"
-            ]
+            "name": "nim-llama-3-1-8b-instruct",
+            "configuration": {
+              "nim_model_name": "meta/llama-3.1-8b-instruct",
+              "max_tokens": 512,
+              "temperature": 0.2,
+              "top_p": 0.7,
+              "stream": true,
+              "base_url": "https://integrate.api.nvidia.com/v1",
+              "system_prompt": "You are a helpful and a bit cynical assistant. Give relevant and short answers, if you dont know the answer just say it, dont make up an answer",
+              "add_metadata": [
+                "system.document.source"
+              ]
+            }
           }
         ]
       }
