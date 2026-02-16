@@ -1,0 +1,30 @@
+{
+    "name": "metadata-enrichment-solution",
+    "version": "0.1.5",
+    "attributes": {
+        "Category": "Solution",
+        "Solution Type": "Data Engineering",
+        "Provider": "Dataloop",
+        "Media Type": ["Image"]
+    },
+    "displayName": "Metadata Enrichment Solution",
+    "description": "A solution for enriching image metadata with EXIF data and Bluriness and Darkness scores.",
+    "scope": "public",
+    "codebase": {
+        "type": "git",
+        "gitUrl": "https://github.com/dataloop-ai-apps/solution-applications.git",
+        "gitTag": "0.1.5"
+    },
+    "components": {},
+    "dependencies": [
+        {
+            "name": "image-metadata-enrichment-template"
+        },
+        {
+            "name": "dataset-images-animals-NVIDIA"
+        }
+    ],
+    "variables": {
+        "Dataset__dataset": "dataset-images-animals-NVIDIA.datasets.Wildlife Images Dataset NVIDIA"
+    }
+}
