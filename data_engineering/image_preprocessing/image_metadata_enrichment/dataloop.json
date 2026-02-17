@@ -25,6 +25,6 @@
         }
     ],
     "variables": {
-        "Dataset__dataset": "dataset-images-animals.datasets.Wildlife Images Dataset"
+        "Dataset__dataset": "dataset-images-animals.datasets.Data Management Demo Dataset"
     }
 }
