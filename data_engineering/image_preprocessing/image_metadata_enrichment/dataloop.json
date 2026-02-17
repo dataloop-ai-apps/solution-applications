@@ -21,10 +21,10 @@
             "name": "image-metadata-enrichment-template"
         },
         {
-            "name": "dataset-images-animals-NVIDIA"
+            "name": "dataset-images-animals"
         }
     ],
     "variables": {
-        "Dataset__dataset": "dataset-images-animals-NVIDIA.datasets.Wildlife Images Dataset NVIDIA"
+        "Dataset__dataset": "dataset-images-animals.datasets.Wildlife Images Dataset"
     }
 }
