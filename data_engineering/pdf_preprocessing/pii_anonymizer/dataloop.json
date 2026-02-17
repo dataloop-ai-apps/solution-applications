@@ -1,0 +1,30 @@
+{
+    "name": "pii-anonymizer-solution",
+    "version": "0.1.5",
+    "attributes": {
+        "Category": "Solution",
+        "Solution Type": "Data Engineering",
+        "Provider": "Dataloop",
+        "Media Type": ["PDF"]
+    },
+    "displayName": "PII Anonymizer Solution",
+    "description": "A solution for anonymizing PII data from PDF files. This solution uses the PII Medical Records Dataset to anonymize the data.",
+    "scope": "public",
+    "codebase": {
+        "type": "git",
+        "gitUrl": "https://github.com/dataloop-ai-apps/solution-applications.git",
+        "gitTag": "0.1.5"
+    },
+    "components": {},
+    "dependencies": [
+        {
+            "name": "pii-anonymizer-pipeline"
+        },
+        {
+            "name": "medical-records-dataset"
+        }
+    ],
+    "variables": {
+        "medical_dataset__dataset": "medical-records-dataset.datasets.Medical Records Dataset"
+    }
+}
