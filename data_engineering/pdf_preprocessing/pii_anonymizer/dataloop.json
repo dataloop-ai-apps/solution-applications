@@ -25,6 +25,6 @@
         }
     ],
     "variables": {
-        "medical_dataset__dataset": "medical-records-dataset.datasets.Medical Records Dataset"
+        "dataset__dataset": "medical-records-dataset.datasets.Medical Records Dataset"
     }
 }
