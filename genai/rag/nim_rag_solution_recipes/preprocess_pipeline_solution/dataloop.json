@@ -26,10 +26,26 @@
     },
     {
       "name": "nim-dataset-pdf-recipes"
+    },
+    {
+      "name": "university-at-buffalo-cached"
+    },
+    {
+      "name": "nv-yolox-page-elements-v1"
+    },
+    {
+      "name": "baidu-paddleocr"
+    },
+    {
+      "name": "nim-llama-3-2-nemoretriever-300m-embed-v2"
     }
   ],
   "variables": {
     "sourceDataset__dataset": "nim-dataset-pdf-recipes.datasets.NIM Recipes PDF Dataset",
-    "chunksDataset__dataset": "nim-dataset-text-recipes.datasets.NIM Recipes Text Dataset"
+    "chunksDataset__dataset": "nim-dataset-text-recipes.datasets.NIM Recipes Text Dataset",
+    "university-at-buffalo-cached__model": "university-at-buffalo-cached.models.university-at-buffalo-cached",
+    "nv-yolox-page-elements_v1__model": "nv-yolox-page-elements-v1.models.nv-yolox-page-elements-v1",
+    "baidu-paddleocr__model": "baidu-paddleocr.models.baidu-paddleocr",
+    "llama-3-2-nemoretriever-300m-embed-v2__model": "nim-llama-3-2-nemoretriever-300m-embed-v2.models.nim-llama-3-2-nemoretriever-300m-embed-v2"
   }
 }
