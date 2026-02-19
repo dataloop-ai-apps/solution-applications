@@ -140,7 +140,6 @@
 **Components:**
 | Type | Description |
 |------|-------------|
-| Pipeline | Embedding extraction → clustering → index for semantic search |
 | Dataset | Domain-specific image dataset with pre-extracted feature embeddings |
 | Models/Apps | Embedder model (e.g. CLIP, ResNet) for feature extraction |
 
