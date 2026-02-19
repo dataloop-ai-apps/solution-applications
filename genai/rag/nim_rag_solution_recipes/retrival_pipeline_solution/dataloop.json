@@ -1,0 +1,58 @@
+{
+  "name": "nim-rag-solution-recipes-retrival",
+  "version": "0.1.5",
+  "attributes": {
+    "Category": "Solution",
+    "Solution Type": "GenAI",
+    "Provider": "Dataloop",
+    "Media Type": [
+      "Text"
+    ]
+  },
+  "displayName": "NIM RAG template - Recipes - Retrival",
+  "description": "This solution implements the RAG retrieval pipeline powered by NVIDIA NIM. It preloads a recipes dataset as the source for document retrieval.",
+  "scope": "public",
+  "codebase": {
+    "type": "git",
+    "gitUrl": "https://github.com/dataloop-ai-apps/solution-applications.git",
+    "gitTag": "0.1.5"
+  },
+  "dependencies": [
+    {
+      "name": "nim-rag-bp"
+    },
+    {
+      "name": "nim-dataset-text-recipes"
+    },
+    {
+      "name": "nim-llama-3-2-nemoretriever-300m-embed-v2"
+    },
+    {
+      "name": "nim-llama-3-1-8b-instruct",
+      "components": {
+        "models": [
+          {
+            "name": "nim-llama-3-1-8b-instruct",
+            "configuration": {
+              "nim_model_name": "meta/llama-3.1-8b-instruct",
+              "max_tokens": 512,
+              "temperature": 0.2,
+              "top_p": 0.7,
+              "stream": true,
+              "base_url": "https://integrate.api.nvidia.com/v1",
+              "system_prompt": "You are a helpful and a bit cynical assistant. Give relevant and short answers, if you dont know the answer just say it, dont make up an answer",
+              "add_metadata": [
+                "system.document.source"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "variables": {
+    "retrieval_dataset__dataset": "nim-dataset-text-recipes.datasets.NIM Recipes Text Dataset",
+    "embed_model__model": "nim-llama-3-2-nemoretriever-300m-embed-v2.models.nim-llama-3-2-nemoretriever-300m-embed-v2",
+    "gen_ai_model__model": "nim-llama-3-1-8b-instruct.models.nim-llama-3-1-8b-instruct"
+  }
+}
