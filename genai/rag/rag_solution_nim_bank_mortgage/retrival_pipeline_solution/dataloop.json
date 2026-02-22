@@ -22,7 +22,7 @@
       "name": "nim-rag-bp"
     },
     {
-      "name": "nim-dataset-text-recipes"
+      "name": "dataset-nim-text-bank-mortgage"
     },
     {
       "name": "nim-llama-3-2-nemoretriever-300m-embed-v2"
@@ -51,7 +51,7 @@
     }
   ],
   "variables": {
-    "retrieval_dataset__dataset": "nim-dataset-text-recipes.datasets.NIM Recipes Text Dataset",
+    "retrieval_dataset__dataset": "dataset-nim-text-bank-mortgage.datasets.NIM Bank Mortgage Text Dataset",
     "embed_model__model": "nim-llama-3-2-nemoretriever-300m-embed-v2.models.nim-llama-3-2-nemoretriever-300m-embed-v2",
     "gen_ai_model__model": "nim-llama-3-1-8b-instruct.models.nim-llama-3-1-8b-instruct"
   }
