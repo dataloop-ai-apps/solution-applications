@@ -1,5 +1,5 @@
 {
-  "name": "rag-solution-openai-recipes-preprocess",
+  "name": "rag-solution-openai-transactions-preprocess",
   "version": "0.1.5",
   "attributes": {
     "Category": "Solution",
@@ -9,7 +9,7 @@
       "Text"
     ]
   },
-  "displayName": "RAG template - Recipes - Preprocess",
+  "displayName": "OpenAI RAG template - Transactions - Preprocess",
   "description": "This solution implements the RAG template, utilizing OpenAI's text embedder for query embedding, retrieving relevant documents, and using ChatGPT to generate context-aware responses. It preloads a recipes dataset as the source for document retrieval.",
   "scope": "public",
   "codebase": {
@@ -22,18 +22,18 @@
       "name": "rag-preprocessing-template"
     },
     {
-      "name": "dataset-pdf-recipes"
+      "name": "dataset-openai-pdf-transactions"
     },
     {
-      "name": "dataset-text-recipes"
+      "name": "dataset-openai-text-transactions"
     },
     {
       "name": "text-embeddings-3"
     }
   ],
   "variables": {
-    "sourceDataset__dataset": "dataset-pdf-recipes.datasets.Recipes PDF Dataset",
-    "chunksDataset__dataset": "dataset-text-recipes.datasets.Recipes Text Dataset",
+    "sourceDataset__dataset": "dataset-openai-pdf-transactions.datasets.OpenAI Transactions PDF Dataset",
+    "chunksDataset__dataset": "dataset-openai-text-transactions.datasets.OpenAI Transactions Text Dataset",
     "embedder__model": "text-embeddings-3.models.openai-prompt-embeddings-3l"
   }
 }

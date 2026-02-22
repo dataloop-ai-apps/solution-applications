@@ -1,5 +1,5 @@
 {
-  "name": "nim-rag-solution-recipes",
+  "name": "rag-solution-nim-bank-mortgage",
   "version": "0.1.5",
   "attributes": {
     "Category": "Solution",
@@ -9,7 +9,7 @@
       "Text"
     ]
   },
-  "displayName": "NIM RAG template - Recipes",
+  "displayName": "NIM RAG template - Bank Mortgage",
   "description": "This solution implements the RAG retrieval pipeline powered by NVIDIA NIM. It preloads a recipes dataset as the source for document retrieval.",
   "scope": "public",
   "codebase": {
@@ -19,10 +19,10 @@
   },
   "dependencies": [
     {
-      "name": "nim-rag-solution-recipes-preprocess"
+      "name": "rag-solution-nim-bank-mortgage-preprocess"
     },
     {
-      "name": "nim-rag-solution-recipes-retrival"
+      "name": "rag-solution-nim-bank-mortgage-retrival"
     }
   ]
 }

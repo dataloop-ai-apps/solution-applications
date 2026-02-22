@@ -1,5 +1,5 @@
 {
-  "name": "nim-rag-solution-recipes-preprocess",
+  "name": "rag-solution-nim-bank-mortgage-preprocess",
   "version": "0.1.5",
   "attributes": {
     "Category": "Solution",
@@ -9,7 +9,7 @@
       "Text"
     ]
   },
-  "displayName": "NIM RAG template - Recipes - Preprocess",
+  "displayName": "NIM RAG template - Bank Mortgage - Preprocess",
   "description": "This solution implements the RAG retrieval pipeline powered by NVIDIA NIM. It preloads a recipes dataset as the source for document retrieval.",
   "scope": "public",
   "codebase": {
@@ -22,10 +22,10 @@
       "name": "preprocess-multimodal-rag-bp"
     },
     {
-      "name": "nim-dataset-text-recipes"
+      "name": "dataset-nim-text-bank-mortgage"
     },
     {
-      "name": "nim-dataset-pdf-recipes"
+      "name": "dataset-nim-pdf-bank-mortgage"
     },
     {
       "name": "university-at-buffalo-cached"
@@ -41,8 +41,8 @@
     }
   ],
   "variables": {
-    "sourceDataset__dataset": "nim-dataset-pdf-recipes.datasets.NIM Recipes PDF Dataset",
-    "chunksDataset__dataset": "nim-dataset-text-recipes.datasets.NIM Recipes Text Dataset",
+    "sourceDataset__dataset": "dataset-nim-pdf-bank-mortgage.datasets.NIM Bank Mortgage PDF Dataset",
+    "chunksDataset__dataset": "dataset-nim-text-bank-mortgage.datasets.NIM Bank Mortgage Text Dataset",
     "university-at-buffalo-cached__model": "university-at-buffalo-cached.models.university-at-buffalo-cached",
     "nv-yolox-page-elements_v1__model": "nv-yolox-page-elements-v1.models.nv-yolox-page-elements-v1",
     "baidu-paddleocr__model": "baidu-paddleocr.models.baidu-paddleocr",
