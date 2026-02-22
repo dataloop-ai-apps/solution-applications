@@ -1,0 +1,24 @@
+{
+    "name": "data-indexing-for-clustering-solution",
+    "version": "0.1.5",
+    "attributes": {
+        "Category": "Solution",
+        "Solution Type": "Data Engineering",
+        "Provider": "Dataloop",
+        "Media Type": ["Image"]
+    },
+    "displayName": "Data Indexing for Clustering Solution",
+    "description": "A solution for indexing data for clustering. This solution uses the Retail Products Dataset. indexed data, for clustering demonstration.",
+    "scope": "public",
+    "codebase": {
+        "type": "git",
+        "gitUrl": "https://github.com/dataloop-ai-apps/solution-applications.git",
+        "gitTag": "0.1.5"
+    },
+    "components": {},
+    "dependencies": [
+        {
+            "name": "dataset-retail-products"
+        }
+    ]
+}
