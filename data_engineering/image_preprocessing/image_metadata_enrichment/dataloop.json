@@ -21,10 +21,10 @@
             "name": "image-metadata-enrichment-template"
         },
         {
-            "name": "dataset-images-animals"
+            "name": "dataset-vehicle-dashcam-image"
         }
     ],
     "variables": {
-        "Dataset__dataset": "dataset-images-animals.datasets.Data Management Demo Dataset"
+        "Dataset__dataset": "dataset-vehicle-dashcam-image.datasets.Vehicle Dashcam Image Dataset"
     }
 }
