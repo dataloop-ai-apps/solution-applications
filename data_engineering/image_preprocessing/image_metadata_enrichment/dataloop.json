@@ -25,6 +25,6 @@
         }
     ],
     "variables": {
-        "Dataset__dataset": "dataset-vehicle-dashcam-image.datasets.Vehicle Dashcam Image Dataset"
+        "dataset__dataset": "dataset-vehicle-dashcam-image.datasets.Vehicle Dashcam Image Dataset"
     }
 }
