@@ -25,7 +25,7 @@
 
 ---
 
-### 2. [RAG Over Recipes Data (OpenAI)](genai/rag/rag_solution_recipes/README.md)
+### 2. [RAG Over Transactions Data (OpenAI)](genai/rag/rag_solution_openai_transactions/README.md)
 
 > **Usecase:** A finance & operations team wants to automatically classify and query company documents using natural-language questions (*"What items were ordered in 10250?"*) and get accurate answers grounded in their internal document archive.
 
@@ -47,7 +47,7 @@
 
 ---
 
-### 3. RAG Blueprint: Knowledge-Base from Banking PDFs
+### 3. [RAG Blueprint: Knowledge-Base from Banking PDFs](genai/rag/rag_solution_nim_bank_mortgage/README.md)
 
 > **Usecase:** A retail bank needs an internal assistant that helps loan officers instantly find answers about mortgage policies, compliance rules, and product terms buried across hundreds of regulatory documents.
 
