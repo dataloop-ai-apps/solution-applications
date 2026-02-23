@@ -27,16 +27,16 @@
 
 ### 2. [RAG Over Recipes Data (OpenAI)](genai/rag/rag_solution_recipes/README.md)
 
-> **Usecase:** A food & recipe platform wants to let users ask natural-language questions (*"What's a gluten-free Italian dessert?"*) and get accurate answers grounded in their proprietary recipe collection.
+> **Usecase:** A finance & operations team wants to automatically classify and query company documents using natural-language questions (*"What items were ordered in 10250?"*) and get accurate answers grounded in their internal document archive.
 
-> **Problem:** The recipe catalog lives in unstructured PDFs and documents with mixed text and images. A plain LLM hallucinates recipes or misses ingredients — the answers must be grounded in the actual source documents.
+> **Problem:** The company’s document archive lives in unstructured PDFs (invoices, inventory reports, purchase orders, shipping orders). A plain LLM may hallucinate financial details or misclassify documents — the answers and classifications must be grounded in the actual source documents.
 
 **Components:**
 | Type | Description |
 |------|-------------|
 | Pipeline | RAG multi-modal preprocess pipeline (PDF parsing, chunking, embedding) |
 | Pipeline | RAG retrieve & generate flow (query → retrieve → LLM answer) |
-| Dataset | Raw PDFs and documents (recipe collection) |
+| Dataset | Raw PDFs and documents (invoices, inventory reports, purchase orders, shipping orders) |
 | Dataset | Preprocessed chunks with extracted features and embeddings |
 | Models/Apps | OpenAI embedder, OpenAI LLM, vector store |
 
@@ -60,7 +60,7 @@
 | Pipeline | RAG retrieve & generate flow (query → retrieve → LLM answer) |
 | Dataset | Raw PDFs and documents (mortgage policies, banking regulations, product guides) |
 | Dataset | Preprocessed chunks with extracted features and embeddings |
-| Models/Apps | Embedder, LLM, vector store |
+| Models/Apps | NIM Embedder, LLM, vector store |
 
 **Show:**
 - Ingesting and indexing a corpus of banking/mortgage documents

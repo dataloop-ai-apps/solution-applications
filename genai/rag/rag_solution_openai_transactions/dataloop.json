@@ -1,0 +1,28 @@
+{
+  "name": "rag-solution-openai-transactions",
+  "version": "0.1.5",
+  "attributes": {
+    "Category": "Solution",
+    "Solution Type": "GenAI",
+    "Provider": "Dataloop",
+    "Media Type": [
+      "Text"
+    ]
+  },
+  "displayName": "OpenAI RAG template - Transactions",
+  "description": "This solution implements the RAG template, utilizing OpenAI's text embedder for query embedding, retrieving relevant documents, and using ChatGPT to generate context-aware responses. It preloads a recipes dataset as the source for document retrieval.",
+  "scope": "public",
+  "codebase": {
+    "type": "git",
+    "gitUrl": "https://github.com/dataloop-ai-apps/solution-applications.git",
+    "gitTag": "0.1.5"
+  },
+  "dependencies": [
+    {
+      "name": "rag-solution-openai-transactions-preprocess"
+    },
+    {
+      "name": "rag-solution-openai-transactions-retrival"
+    }
+  ]
+}

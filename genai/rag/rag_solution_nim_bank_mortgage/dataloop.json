@@ -1,0 +1,28 @@
+{
+  "name": "rag-solution-nim-bank-mortgage",
+  "version": "0.1.5",
+  "attributes": {
+    "Category": "Solution",
+    "Solution Type": "GenAI",
+    "Provider": "Dataloop",
+    "Media Type": [
+      "Text"
+    ]
+  },
+  "displayName": "NIM RAG template - Bank Mortgage",
+  "description": "This solution implements the RAG retrieval pipeline powered by NVIDIA NIM. It preloads a recipes dataset as the source for document retrieval.",
+  "scope": "public",
+  "codebase": {
+    "type": "git",
+    "gitUrl": "https://github.com/dataloop-ai-apps/solution-applications.git",
+    "gitTag": "0.1.5"
+  },
+  "dependencies": [
+    {
+      "name": "rag-solution-nim-bank-mortgage-preprocess"
+    },
+    {
+      "name": "rag-solution-nim-bank-mortgage-retrival"
+    }
+  ]
+}

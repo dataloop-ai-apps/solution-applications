@@ -1,12 +1,12 @@
-# *RAG* Pipeline Example: Recipes
+# OpenAI *RAG* Pipeline Example: Transactions
 
 <img src="assets/rag_template.png" alt="Image of the pipeline">
 
 ### Introduction:
 
-This RAG solution creates a template for retrieval-augmented generation using OpenAI's text embedder, ChatGPT, and a recipes
+This RAG solution creates a template for retrieval-augmented generation using OpenAI's text embedder, ChatGPT, and a Transactions
 dataset. With this approach, you can efficiently retrieve relevant documents and generate context-aware responses,
-in the context of the Recipes Dataset.
+in the context of the Transactions Dataset.
 
 ### Installation:
 
