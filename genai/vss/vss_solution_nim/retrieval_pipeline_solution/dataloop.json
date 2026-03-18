@@ -1,6 +1,6 @@
 {
   "name": "vss-solution-nim-retrieval",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "attributes": {
     "Category": "Solution",
     "Solution Type": "GenAI",
