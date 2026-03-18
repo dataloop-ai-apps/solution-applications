@@ -22,7 +22,7 @@
       "name": "rag-solution-openai-transactions-preprocess"
     },
     {
-      "name": "rag-solution-openai-transactions-retrival"
+      "name": "rag-solution-openai-transactions-retrieval"
     }
   ]
 }

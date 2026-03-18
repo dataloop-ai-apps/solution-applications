@@ -1,5 +1,5 @@
 {
-  "name": "rag-solution-openai-transactions-retrival",
+  "name": "rag-solution-openai-transactions-retrieval",
   "version": "0.1.12",
   "attributes": {
     "Category": "Solution",
@@ -9,7 +9,7 @@
       "Text"
     ]
   },
-  "displayName": "OpenAI RAG template - Transactions - Retrival",
+  "displayName": "OpenAI RAG template - Transactions - Retrieval",
   "description": "This solution implements the RAG template, utilizing OpenAI's text embedder for query embedding, retrieving relevant documents, and using ChatGPT to generate context-aware responses. It preloads a recipes dataset as the source for document retrieval.",
   "scope": "public",
   "codebase": {
