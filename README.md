@@ -109,7 +109,7 @@
 
 ---
 
-### 6. Multimodal Indexing — NVIDIA Blueprint (Video, Audio, Images)
+### 6. [Video Search & Summarization — NVIDIA NIM Blueprint](genai/vss/vss_solution_nim/README.md)
 
 > **Usecase:** A media company needs to make their massive archive of raw video footage searchable — find specific scenes, spoken phrases, or objects across thousands of hours of unstructured video content.
 
@@ -118,16 +118,16 @@
 **Components:**
 | Type | Description |
 |------|-------------|
-| Pipeline | Multimodal indexing (video → frame extraction → object detection + summarization + audio transcription) |
+| Pipeline | VSS preprocessing (video splitting → VILA VLM descriptions + Parakeet ASR transcripts → embedding → Graph RAG) |
+| Pipeline | VSS retrieval (graph query → vector search → LLM response) |
 | Dataset | Raw video files (mixed content — interviews, field footage, events) |
-| Model (NIM) | Open-world object detection (identify objects/scenes in frames) |
-| Model (NIM) | Video summarization (generate scene-level text summaries) |
-| Model (NIM) | Audio extraction and transcription (speech-to-text from video audio tracks) |
+| Dataset | Preprocessed text chunks with embeddings and knowledge graph |
+| Models/Apps | NIM Embedder (Llama 3.2 NeMoRetriever 1B VLM Embed), NIM LLM (Llama 3.1 8B Instruct), VILA VLM, Parakeet ASR |
 
 **Show:**
-- End-to-end video ingestion — upload a video, get it indexed across all modalities
+- End-to-end video ingestion — upload a video, get it indexed across visual and audio modalities
 - Cross-modal search — *"Find clips where someone mentions 'product launch' near a whiteboard"*
-- Rich metadata per video segment: detected objects, transcript, and scene summary
+- Rich metadata per video segment: VLM descriptions, audio transcripts, knowledge graph entities
 
 ---
 
