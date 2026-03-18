@@ -1,0 +1,35 @@
+{
+  "name": "vss-solution-nim-preprocess",
+  "version": "0.1.12",
+  "attributes": {
+    "Category": "Solution",
+    "Solution Type": "GenAI",
+    "Provider": "Dataloop",
+    "Media Type": [
+      "Video"
+    ]
+  },
+  "displayName": "NIM VSS Blueprint - Preprocess",
+  "description": "This solution implements the Video Search & Summarization preprocessing pipeline powered by NVIDIA NIM. It ingests videos, splits them into chunks, generates visual descriptions (VILA VLM) and audio transcripts (Parakeet ASR), embeds the text, and builds a knowledge graph for downstream search and Q&A.",
+  "scope": "public",
+  "codebase": {
+    "type": "git",
+    "gitUrl": "https://github.com/dataloop-ai-apps/solution-applications.git",
+    "gitTag": "0.1.10"
+  },
+  "dependencies": [
+    {
+      "name": "video-search-summarization-bp"
+    },
+    {
+      "name": "dataset-nim-vss-text-chunks"
+    },
+    {
+      "name": "dataset-nim-vss-source-videos"
+    }
+  ],
+  "variables": {
+    "sourceDataset__dataset": "dataset-nim-vss-source-videos.datasets.NIM VSS Source Videos Dataset",
+    "chunksDataset__dataset": "dataset-nim-vss-text-chunks.datasets.NIM VSS Text Chunks Dataset"
+  }
+}

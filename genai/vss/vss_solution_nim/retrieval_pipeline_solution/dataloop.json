@@ -1,0 +1,31 @@
+{
+  "name": "vss-solution-nim-retrieval",
+  "version": "0.1.12",
+  "attributes": {
+    "Category": "Solution",
+    "Solution Type": "GenAI",
+    "Provider": "Dataloop",
+    "Media Type": [
+      "Text"
+    ]
+  },
+  "displayName": "NIM VSS Blueprint - Retrieval",
+  "description": "This solution implements the Video Search & Summarization retrieval pipeline powered by NVIDIA NIM. It queries the knowledge graph built during preprocessing, retrieves relevant embedded chunks via vector search, and generates a response using an LLM.",
+  "scope": "public",
+  "codebase": {
+    "type": "git",
+    "gitUrl": "https://github.com/dataloop-ai-apps/solution-applications.git",
+    "gitTag": "0.1.10"
+  },
+  "dependencies": [
+    {
+      "name": "vss-retrieval-bp"
+    },
+    {
+      "name": "dataset-nim-vss-text-chunks"
+    }
+  ],
+  "variables": {
+    "retrieval_dataset__dataset": "dataset-nim-vss-text-chunks.datasets.NIM VSS Text Chunks Dataset"
+  }
+}

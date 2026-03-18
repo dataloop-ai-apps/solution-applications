@@ -1,0 +1,29 @@
+{
+  "name": "vss-solution-nim",
+  "version": "0.1.12",
+  "attributes": {
+    "Category": "Solution",
+    "Solution Type": "GenAI",
+    "Provider": "Dataloop",
+    "Media Type": [
+      "Video",
+      "Text"
+    ]
+  },
+  "displayName": "NIM VSS Blueprint - Video Search & Summarization",
+  "description": "This solution implements the Video Search & Summarization pipeline powered by NVIDIA NIM. It ingests videos, extracts visual descriptions and audio transcripts, builds a knowledge graph, and enables natural-language search and Q&A over video content.",
+  "scope": "public",
+  "codebase": {
+    "type": "git",
+    "gitUrl": "https://github.com/dataloop-ai-apps/solution-applications.git",
+    "gitTag": "0.1.10"
+  },
+  "dependencies": [
+    {
+      "name": "vss-solution-nim-preprocess"
+    },
+    {
+      "name": "vss-solution-nim-retrieval"
+    }
+  ]
+}

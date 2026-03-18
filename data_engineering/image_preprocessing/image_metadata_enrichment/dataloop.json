@@ -1,6 +1,6 @@
 {
     "name": "metadata-enrichment-solution",
-    "version": "0.1.10",
+    "version": "0.1.12",
     "attributes": {
         "Category": "Solution",
         "Solution Type": "Data Engineering",
@@ -13,7 +13,7 @@
     "codebase": {
         "type": "git",
         "gitUrl": "https://github.com/dataloop-ai-apps/solution-applications.git",
-        "gitTag": "0.1.10"
+        "gitTag": "0.1.12"
     },
     "components": {},
     "dependencies": [
