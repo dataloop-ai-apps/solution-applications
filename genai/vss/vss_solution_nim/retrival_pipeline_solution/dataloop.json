@@ -1,0 +1,59 @@
+{
+  "name": "vss-solution-nim-retrival",
+  "version": "0.1.10",
+  "attributes": {
+    "Category": "Solution",
+    "Solution Type": "GenAI",
+    "Provider": "Dataloop",
+    "Media Type": [
+      "Video",
+      "Text"
+    ]
+  },
+  "displayName": "NIM VSS Blueprint - Retrival",
+  "description": "This solution implements the Video Search & Summarization retrieval pipeline powered by NVIDIA NIM. It queries the knowledge graph built during preprocessing, retrieves relevant embedded chunks via vector search, and generates a response using an LLM.",
+  "scope": "public",
+  "codebase": {
+    "type": "git",
+    "gitUrl": "https://github.com/dataloop-ai-apps/solution-applications.git",
+    "gitTag": "0.1.10"
+  },
+  "dependencies": [
+    {
+      "name": "vss-retrieval-bp"
+    },
+    {
+      "name": "<TODO:ADD_DATASET_DPK_NAME_FOR_PREPROCESSED_TEXT_CHUNKS_TARGET_DATASET>"
+    },
+    {
+      "name": "nim-llama-3-2-nemoretriever-1b-vlm-embed-v1"
+    },
+    {
+      "name": "nim-llama-3-1-8b-instruct",
+      "components": {
+        "models": [
+          {
+            "name": "nim-llama-3-1-8b-instruct",
+            "configuration": {
+              "nim_model_name": "meta/llama-3.1-8b-instruct",
+              "max_tokens": 4096,
+              "temperature": 0.2,
+              "top_p": 0.7,
+              "stream": true,
+              "base_url": "https://integrate.api.nvidia.com/v1",
+              "system_prompt": "You are a helpful video search and summarization assistant. Answer questions based on the provided video descriptions and transcripts. Be specific and reference the visual or audio context when relevant. If the answer is not found in the provided context, say so clearly.",
+              "add_metadata": [
+                "system.document.source"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "variables": {
+    "retrieval_dataset__dataset": "<TODO:ADD_TEXT_CHUNKS_DPK_NAME>.datasets.<TODO:ADD_TEXT_CHUNKS_DATASET_DISPLAY_NAME>",
+    "embed_model__model": "nim-llama-3-2-nemoretriever-1b-vlm-embed-v1.models.nim-llama-3-2-nemoretriever-1b-vlm-embed-v1",
+    "gen_ai_model__model": "nim-llama-3-1-8b-instruct.models.nim-llama-3-1-8b-instruct"
+  }
+}

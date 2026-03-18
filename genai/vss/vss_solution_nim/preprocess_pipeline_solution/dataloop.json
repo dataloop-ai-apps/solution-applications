@@ -1,0 +1,48 @@
+{
+  "name": "vss-solution-nim-preprocess",
+  "version": "0.1.10",
+  "attributes": {
+    "Category": "Solution",
+    "Solution Type": "GenAI",
+    "Provider": "Dataloop",
+    "Media Type": [
+      "Video",
+      "Text"
+    ]
+  },
+  "displayName": "NIM VSS Blueprint - Preprocess",
+  "description": "This solution implements the Video Search & Summarization preprocessing pipeline powered by NVIDIA NIM. It ingests videos, splits them into chunks, generates visual descriptions (VILA VLM) and audio transcripts (Parakeet ASR), embeds the text, and builds a knowledge graph for downstream search and Q&A.",
+  "scope": "public",
+  "codebase": {
+    "type": "git",
+    "gitUrl": "https://github.com/dataloop-ai-apps/solution-applications.git",
+    "gitTag": "0.1.10"
+  },
+  "dependencies": [
+    {
+      "name": "video-search-summarization-bp"
+    },
+    {
+      "name": "<TODO:ADD_DATASET_DPK_NAME_FOR_PREPROCESSED_TEXT_CHUNKS_TARGET_DATASET>"
+    },
+    {
+      "name": "<TODO:ADD_DATASET_DPK_NAME_FOR_SOURCE_VIDEOS_DATASET>"
+    },
+    {
+      "name": "vila-model-adapter"
+    },
+    {
+      "name": "nim-llama-3-2-nemoretriever-1b-vlm-embed-v1"
+    },
+    {
+      "name": "nim-llama-3-1-8b-instruct"
+    }
+  ],
+  "variables": {
+    "sourceDataset__dataset": "<TODO:ADD_SOURCE_VIDEOS_DPK_NAME>.datasets.<TODO:ADD_SOURCE_VIDEOS_DATASET_DISPLAY_NAME>",
+    "chunksDataset__dataset": "<TODO:ADD_TEXT_CHUNKS_DPK_NAME>.datasets.<TODO:ADD_TEXT_CHUNKS_DATASET_DISPLAY_NAME>",
+    "vlm_model__model": "vila-model-adapter.models.vila-1p5-3b",
+    "embedding_model__model": "nim-llama-3-2-nemoretriever-1b-vlm-embed-v1.models.nim-llama-3-2-nemoretriever-1b-vlm-embed-v1",
+    "graph_llm_model__model": "nim-llama-3-1-8b-instruct.models.nim-llama-3-1-8b-instruct"
+  }
+}
