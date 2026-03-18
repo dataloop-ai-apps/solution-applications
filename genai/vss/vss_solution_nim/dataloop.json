@@ -1,6 +1,6 @@
 {
   "name": "vss-solution-nim",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "attributes": {
     "Category": "Solution",
     "Solution Type": "GenAI",
