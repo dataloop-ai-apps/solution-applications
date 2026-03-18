@@ -1,6 +1,6 @@
 {
   "name": "vss-solution-nim-preprocess",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "attributes": {
     "Category": "Solution",
     "Solution Type": "GenAI",
