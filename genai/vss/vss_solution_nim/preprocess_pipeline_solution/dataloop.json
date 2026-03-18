@@ -6,8 +6,7 @@
     "Solution Type": "GenAI",
     "Provider": "Dataloop",
     "Media Type": [
-      "Video",
-      "Text"
+      "Video"
     ]
   },
   "displayName": "NIM VSS Blueprint - Preprocess",
@@ -27,22 +26,10 @@
     },
     {
       "name": "dataset-nim-vss-source-videos"
-    },
-    {
-      "name": "vila-model-adapter"
-    },
-    {
-      "name": "nim-llama-3-2-nemoretriever-1b-vlm-embed-v1"
-    },
-    {
-      "name": "nim-llama-3-1-8b-instruct"
     }
   ],
   "variables": {
     "sourceDataset__dataset": "dataset-nim-vss-source-videos.datasets.NIM VSS Source Videos Dataset",
-    "chunksDataset__dataset": "dataset-nim-vss-text-chunks.datasets.NIM VSS Text Chunks Dataset",
-    "vlm_model__model": "vila-model-adapter.models.vila-1p5-3b",
-    "embedding_model__model": "nim-llama-3-2-nemoretriever-1b-vlm-embed-v1.models.nim-llama-3-2-nemoretriever-1b-vlm-embed-v1",
-    "graph_llm_model__model": "nim-llama-3-1-8b-instruct.models.nim-llama-3-1-8b-instruct"
+    "chunksDataset__dataset": "dataset-nim-vss-text-chunks.datasets.NIM VSS Text Chunks Dataset"
   }
 }
