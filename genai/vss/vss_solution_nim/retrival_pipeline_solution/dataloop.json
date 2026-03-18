@@ -23,7 +23,7 @@
       "name": "vss-retrieval-bp"
     },
     {
-      "name": "<TODO:ADD_DATASET_DPK_NAME_FOR_PREPROCESSED_TEXT_CHUNKS_TARGET_DATASET>"
+      "name": "dataset-nim-vss-text-chunks"
     },
     {
       "name": "nim-llama-3-2-nemoretriever-1b-vlm-embed-v1"
@@ -52,7 +52,7 @@
     }
   ],
   "variables": {
-    "retrieval_dataset__dataset": "<TODO:ADD_TEXT_CHUNKS_DPK_NAME>.datasets.<TODO:ADD_TEXT_CHUNKS_DATASET_DISPLAY_NAME>",
+    "retrieval_dataset__dataset": "dataset-nim-vss-text-chunks.datasets.NIM VSS Text Chunks Dataset",
     "embed_model__model": "nim-llama-3-2-nemoretriever-1b-vlm-embed-v1.models.nim-llama-3-2-nemoretriever-1b-vlm-embed-v1",
     "gen_ai_model__model": "nim-llama-3-1-8b-instruct.models.nim-llama-3-1-8b-instruct"
   }
