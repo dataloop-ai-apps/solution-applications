@@ -23,9 +23,46 @@
     },
     {
       "name": "dataset-nim-vss-text-chunks"
+    },
+    {
+      "name": "nim-llama-3-2-nemoretriever-1b-vlm-embed-v1",
+      "components": {
+        "models": [
+          {
+            "name": "nim-llama-3-2-nemoretriever-1b-vlm-embed-v1",
+            "configuration": {
+              "nim_model_name": "nvidia/llama-3.2-nemoretriever-1b-vlm-embed-v1",
+              "embeddings_size": 2048
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "nim-llama-3-1-8b-instruct",
+      "components": {
+        "models": [
+          {
+            "name": "nim-llama-3-1-8b-instruct",
+            "configuration": {
+              "nim_model_name": "meta/llama-3.1-8b-instruct",
+              "system_prompt": "",
+              "max_tokens": 4096,
+              "temperature": 0.2,
+              "top_p": 0.7,
+              "stream": true,
+              "add_metadata": [
+                "system.document.source"
+              ]
+            }
+          }
+        ]
+      }
     }
   ],
   "variables": {
-    "retrieval_dataset__dataset": "dataset-nim-vss-text-chunks.datasets.NIM VSS Text Chunks Dataset"
+    "retrieval_dataset__dataset": "dataset-nim-vss-text-chunks.datasets.NIM VSS Text Chunks Dataset",
+    "embed_model__model": "nim-llama-3-2-nemoretriever-1b-vlm-embed-v1.models.nim-llama-3-2-nemoretriever-1b-vlm-embed-v1",
+    "gen_ai_model__model": "nim-llama-3-1-8b-instruct.models.nim-llama-3-1-8b-instruct"
   }
 }
