@@ -55,7 +55,7 @@
   ],
   "variables": {
     "sourceDataset__dataset": "dataset-caud-contracts-chunks.datasets.CAUD Contracts Chunks Dataset",
-    "embedder_retriever__model": "clip-model-pretrained.models.openai-clip",
+    "embedderRetriever__model": "clip-model-pretrained.models.openai-clip",
     "embedder__model": "clip-model-pretrained.models.openai-clip",
     "genModel__model": "hosted-chat-completion.models.hosted-chat-completion"
   }
