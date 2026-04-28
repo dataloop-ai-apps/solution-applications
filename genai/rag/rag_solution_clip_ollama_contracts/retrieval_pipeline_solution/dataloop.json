@@ -1,0 +1,62 @@
+{
+  "name": "rag-solution-clip-contracts-retrieval",
+  "version": "0.1.13",
+  "attributes": {
+    "Category": "Solution",
+    "Solution Type": "GenAI",
+    "Provider": "Dataloop",
+    "Media Type": [
+      "Text"
+    ]
+  },
+  "displayName": "RAG template - Contracts - Retrieval",
+  "description": "This solution implements the RAG retrieval pipeline template, utilizing CLIP Embedder and Dataloop's Hosted LLM.",
+  "scope": "public",
+  "codebase": {
+    "type": "git",
+    "gitUrl": "https://github.com/dataloop-ai-apps/solution-applications.git",
+    "gitTag": "0.1.13"
+  },
+  "dependencies": [
+    {
+      "name": "rag-template"
+    },
+    {
+      "name": "dataset-caud-contracts-chunks"
+    },
+    {
+      "name": "clip-model-pretrained"
+    },
+    {
+      "name": "ollama-server"
+    },
+    {
+      "name": "hosted-chat-completion",
+      "components": {
+        "models": [
+          {
+            "name": "hosted-chat-completion",
+            "configuration": {
+              "system_prompt": "You are a RAG based assistant. Answer by the context given and give the documents names in your response.",
+              "model_name": "phi4-mini:latest",
+              "add_metadata": [
+                "system.originalname.filename"
+              ],
+              "app_id": "",
+              "stream": true,
+              "max_tokens": 4096,
+              "temperature": 1.0,
+              "top_p": 1.0
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "variables": {
+    "sourceDataset__dataset": "dataset-caud-contracts-chunks.datasets.CAUD Contracts Chunks Dataset",
+    "embedder_retriever__model": "clip-model-pretrained.models.openai-clip",
+    "embedder__model": "clip-model-pretrained.models.openai-clip",
+    "genModel__model": "hosted-chat-completion.models.hosted-chat-completion"
+  }
+}
