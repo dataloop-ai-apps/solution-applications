@@ -59,10 +59,10 @@
       }
     },
     {
-      "name": "dataset-source-rag-custom"
+      "name": "dataset-empty-source"
     },
     {
-      "name": "dataset-chunks-rag-custom"
+      "name": "dataset-empty-chunks"
     },
     {
       "name": "clip-model-pretrained",
@@ -83,8 +83,8 @@
     }
   ],
   "variables": {
-    "sourceDataset__dataset": "dataset-source-rag-custom.datasets.Source Dataset",
-    "chunksDataset__dataset": "dataset-chunks-rag-custom.datasets.Chunks Dataset",
+    "sourceDataset__dataset": "dataset-empty-source.datasets.Source Dataset",
+    "chunksDataset__dataset": "dataset-empty-chunks.datasets.Chunks Dataset",
     "embedder__model": "clip-model-pretrained.models.openai-clip"
   }
 }

@@ -36,7 +36,7 @@
       }
     },
     {
-      "name": "dataset-chunks-rag-custom"
+      "name": "dataset-empty-chunks"
     },
     {
       "name": "clip-model-pretrained",
@@ -108,7 +108,7 @@
     }
   ],
   "variables": {
-    "sourceDataset__dataset": "dataset-chunks-rag-custom.datasets.Chunks Dataset",
+    "sourceDataset__dataset": "dataset-empty-chunks.datasets.Chunks Dataset",
     "embedderRetriever__model": "clip-model-pretrained.models.openai-clip",
     "embedder__model": "clip-model-pretrained.models.openai-clip",
     "genModel__model": "hosted-chat-completion.models.hosted-chat-completion"
