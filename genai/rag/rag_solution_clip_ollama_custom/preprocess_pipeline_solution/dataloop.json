@@ -1,5 +1,5 @@
 {
-  "name": "rag-solution-clip-contracts-custom-preprocess",
+  "name": "rag-solution-clip-ollama-custom-preprocess",
   "version": "0.1.14",
   "attributes": {
     "Category": "Solution",
@@ -9,8 +9,8 @@
       "Text"
     ]
   },
-  "displayName": "RAG template - Custom Contracts - Preprocess",
-  "description": "Preprocessing pipeline for the Custom Contracts RAG solution. Source and chunks datasets are installed empty; an Item.Created trigger on the source dataset (DQL filter mimetype=application/pdf) starts this pipeline automatically when a new PDF is added. Pipeline dependency services are scaled to 1 replica by default.",
+  "displayName": "Custom CLIP & Ollama RAG - Preprocess",
+  "description": "Preprocessing pipeline for the Custom CLIP & Ollama RAG solution. Source and chunks datasets are installed empty; an Item.Created trigger on the source dataset (DQL filter mimetype=application/pdf) starts this pipeline automatically when a new PDF is added. Pipeline dependency services are scaled to 1 replica by default.",
   "scope": "public",
   "codebase": {
     "type": "git",
@@ -59,10 +59,10 @@
       }
     },
     {
-      "name": "dataset-caud-contracts-custom"
+      "name": "dataset-source-rag-custom"
     },
     {
-      "name": "dataset-caud-contracts-custom-chunks"
+      "name": "dataset-chunks-rag-custom"
     },
     {
       "name": "clip-model-pretrained",
@@ -83,8 +83,8 @@
     }
   ],
   "variables": {
-    "sourceDataset__dataset": "dataset-caud-contracts-custom.datasets.CAUD Contracts Custom PDF Dataset",
-    "chunksDataset__dataset": "dataset-caud-contracts-custom-chunks.datasets.CAUD Contracts Custom Chunks Dataset",
+    "sourceDataset__dataset": "dataset-source-rag-custom.datasets.Source Dataset",
+    "chunksDataset__dataset": "dataset-chunks-rag-custom.datasets.Chunks Dataset",
     "embedder__model": "clip-model-pretrained.models.openai-clip"
   }
 }
