@@ -1,0 +1,90 @@
+{
+  "name": "rag-solution-clip-contracts-custom-preprocess",
+  "version": "0.1.14",
+  "attributes": {
+    "Category": "Solution",
+    "Solution Type": "GenAI",
+    "Provider": "Dataloop",
+    "Media Type": [
+      "Text"
+    ]
+  },
+  "displayName": "RAG template - Custom Contracts - Preprocess",
+  "description": "Preprocessing pipeline for the Custom Contracts RAG solution. Source and chunks datasets are installed empty; an Item.Created trigger on the source dataset (DQL filter mimetype=application/pdf) starts this pipeline automatically when a new PDF is added. Pipeline dependency services are scaled to 1 replica by default.",
+  "scope": "public",
+  "codebase": {
+    "type": "git",
+    "gitUrl": "https://github.com/dataloop-ai-apps/solution-applications.git",
+    "gitTag": "0.1.14"
+  },
+  "dependencies": [
+    {
+      "name": "rag-preprocessing-template",
+      "components": {
+        "services": [
+          {
+            "runtime": {
+              "autoscaler": {
+                "type": "rabbitmq",
+                "minReplicas": 1,
+                "maxReplicas": 1,
+                "queueLength": 1000
+              }
+            }
+          }
+        ],
+        "triggers": [
+          {
+            "name": "auto-ingest-pdf-on-create",
+            "type": "Event",
+            "spec": {
+              "filter": {
+                "$and": [
+                  {
+                    "metadata.system.mimetype": {
+                      "$eq": "application/pdf"
+                    }
+                  }
+                ]
+              },
+              "executionMode": "Once",
+              "resource": "Item",
+              "actions": [
+                "Created"
+              ]
+            },
+            "scope": "project"
+          }
+        ]
+      }
+    },
+    {
+      "name": "dataset-caud-contracts-custom"
+    },
+    {
+      "name": "dataset-caud-contracts-custom-chunks"
+    },
+    {
+      "name": "clip-model-pretrained",
+      "components": {
+        "services": [
+          {
+            "runtime": {
+              "autoscaler": {
+                "type": "rabbitmq",
+                "minReplicas": 1,
+                "maxReplicas": 1,
+                "queueLength": 1000
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "variables": {
+    "sourceDataset__dataset": "dataset-caud-contracts-custom.datasets.CAUD Contracts Custom PDF Dataset",
+    "chunksDataset__dataset": "dataset-caud-contracts-custom-chunks.datasets.CAUD Contracts Custom Chunks Dataset",
+    "embedder__model": "clip-model-pretrained.models.openai-clip"
+  }
+}
