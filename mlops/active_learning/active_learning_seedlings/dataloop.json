@@ -4,7 +4,7 @@
     "attributes": {
         "Category": "Solution",
         "Solution Type": "MLOps",
-        "Provider": "Dataloop",
+        "Provider": "DDOE",
         "Media Type": ["All Media Types"]
     },
     "displayName": "Active Learning Example Seedlings",

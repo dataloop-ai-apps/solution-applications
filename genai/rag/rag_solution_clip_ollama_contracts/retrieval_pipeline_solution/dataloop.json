@@ -4,13 +4,13 @@
   "attributes": {
     "Category": "Solution",
     "Solution Type": "GenAI",
-    "Provider": "Dataloop",
+    "Provider": "DDOE",
     "Media Type": [
       "Text"
     ]
   },
   "displayName": "RAG template - Contracts - Retrieval",
-  "description": "This solution implements the RAG retrieval pipeline template, utilizing CLIP Embedder and Dataloop's Hosted LLM.",
+  "description": "This solution implements the RAG retrieval pipeline template, utilizing CLIP Embedder and DDOE's Hosted LLM.",
   "scope": "public",
   "codebase": {
     "type": "git",
