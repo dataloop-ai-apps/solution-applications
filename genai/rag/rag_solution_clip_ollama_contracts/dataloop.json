@@ -4,13 +4,13 @@
   "attributes": {
     "Category": "Solution",
     "Solution Type": "GenAI",
-    "Provider": "Dataloop",
+    "Provider": "DDOE",
     "Media Type": [
       "Text"
     ]
   },
   "displayName": "RAG template - Contracts",
-  "description": "This solution implements the RAG template, utilizing CLIP Embedder and Dataloop's Hosted LLM. It preloads a contracts dataset as the source for document retrieval, and uses the CLIP Embedder to embed the documents, and the Hosted LLM, using Ollama server, to generate context-aware responses.",
+  "description": "This solution implements the RAG template, utilizing CLIP Embedder and DDOE's Hosted LLM. It preloads a contracts dataset as the source for document retrieval, and uses the CLIP Embedder to embed the documents, and the Hosted LLM, using Ollama server, to generate context-aware responses.",
   "scope": "public",
   "codebase": {
     "type": "git",
