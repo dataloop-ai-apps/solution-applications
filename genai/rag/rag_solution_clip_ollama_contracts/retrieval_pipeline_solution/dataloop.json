@@ -28,7 +28,7 @@
       "name": "clip-model-pretrained"
     },
     {
-      "name": "ollama-server"
+      "name": "ollama-server-phi4"
     },
     {
       "name": "hosted-chat-completion",
