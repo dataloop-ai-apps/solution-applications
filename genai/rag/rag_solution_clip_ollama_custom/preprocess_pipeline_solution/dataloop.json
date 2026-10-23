@@ -1,0 +1,90 @@
+{
+  "name": "rag-solution-clip-ollama-custom-preprocess",
+  "version": "0.1.14",
+  "attributes": {
+    "Category": "Solution",
+    "Solution Type": "GenAI",
+    "Provider": "Dataloop",
+    "Media Type": [
+      "Text"
+    ]
+  },
+  "displayName": "Custom CLIP & Ollama RAG - Preprocess",
+  "description": "Preprocessing pipeline for the Custom CLIP & Ollama RAG solution. Source and chunks datasets are installed empty; an Item.Created trigger on the source dataset (DQL filter mimetype=application/pdf) starts this pipeline automatically when a new PDF is added. Pipeline dependency services are scaled to 1 replica by default.",
+  "scope": "public",
+  "codebase": {
+    "type": "git",
+    "gitUrl": "https://github.com/dataloop-ai-apps/solution-applications.git",
+    "gitTag": "0.1.14"
+  },
+  "dependencies": [
+    {
+      "name": "rag-preprocessing-template",
+      "components": {
+        "services": [
+          {
+            "runtime": {
+              "autoscaler": {
+                "type": "rabbitmq",
+                "minReplicas": 1,
+                "maxReplicas": 1,
+                "queueLength": 1000
+              }
+            }
+          }
+        ],
+        "triggers": [
+          {
+            "name": "auto-ingest-pdf-on-create",
+            "type": "Event",
+            "spec": {
+              "filter": {
+                "$and": [
+                  {
+                    "metadata.system.mimetype": {
+                      "$eq": "application/pdf"
+                    }
+                  }
+                ]
+              },
+              "executionMode": "Once",
+              "resource": "Item",
+              "actions": [
+                "Created"
+              ]
+            },
+            "scope": "project"
+          }
+        ]
+      }
+    },
+    {
+      "name": "dataset-empty-source"
+    },
+    {
+      "name": "dataset-empty-chunks"
+    },
+    {
+      "name": "clip-model-pretrained",
+      "components": {
+        "services": [
+          {
+            "runtime": {
+              "autoscaler": {
+                "type": "rabbitmq",
+                "minReplicas": 1,
+                "maxReplicas": 1,
+                "queueLength": 1000
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "variables": {
+    "sourceDataset__dataset": "dataset-empty-source.datasets.Source Dataset",
+    "chunksDataset__dataset": "dataset-empty-chunks.datasets.Chunks Dataset",
+    "embedder__model": "clip-model-pretrained.models.openai-clip"
+  }
+}

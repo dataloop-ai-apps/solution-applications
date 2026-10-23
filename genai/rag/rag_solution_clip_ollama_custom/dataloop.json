@@ -1,0 +1,28 @@
+{
+  "name": "rag-solution-clip-ollama-custom",
+  "version": "0.1.14",
+  "attributes": {
+    "Category": "Solution",
+    "Solution Type": "GenAI",
+    "Provider": "Dataloop",
+    "Media Type": [
+      "Text"
+    ]
+  },
+  "displayName": "Custom CLIP & Ollama RAG",
+  "description": "Customized CLIP & Ollama RAG solution. Source and chunks datasets are installed empty; new items added to the source dataset are automatically ingested by the preprocess pipeline. All pipeline dependency services are scaled to 1 replica by default.",
+  "scope": "public",
+  "codebase": {
+    "type": "git",
+    "gitUrl": "https://github.com/dataloop-ai-apps/solution-applications.git",
+    "gitTag": "0.1.14"
+  },
+  "dependencies": [
+    {
+      "name": "rag-solution-clip-ollama-custom-preprocess"
+    },
+    {
+      "name": "rag-solution-clip-ollama-custom-retrieval"
+    }
+  ]
+}
