@@ -22,4 +22,4 @@ enable different visual perspectives on the dataset, allowing you to compare emb
 the Retail Products data.
 
 For the complete documentation on data indexing and clustering, please refer to
-the [Dataloop Documentation](https://docs.dataloop.ai/)
+the [DDOE Documentation](https://docs.dataloop.ai/)

@@ -2,7 +2,7 @@
 
 ### Introduction:
 
-This RAG solution implements the RAG template for Contracts: a contracts knowledge base (CAUD Contracts PDFs and chunk datasets), CLIP for embeddings, and Dataloop’s hosted LLM served through an Ollama server for generation. The preprocess pipeline ingests and embeds contract chunks; the retrieval pipeline retrieves relevant passages and returns short, grounded answers.
+This RAG solution implements the RAG template for Contracts: a contracts knowledge base (CAUD Contracts PDFs and chunk datasets), CLIP for embeddings, and DDOE’s hosted LLM served through an Ollama server for generation. The preprocess pipeline ingests and embeds contract chunks; the retrieval pipeline retrieves relevant passages and returns short, grounded answers.
 
 ### Installation:
 

@@ -18,4 +18,4 @@ To install and use the example, follow these steps:
 ### Usage:
 
 For the complete documentation of the Metadata Enrichment pipeline, please refer to
-the [Dataloop Documentation](https://docs.dataloop.ai/)
+the [DDOE Documentation](https://docs.dataloop.ai/)
