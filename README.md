@@ -122,7 +122,7 @@
 | Pipeline | VSS retrieval (graph query → vector search → LLM response) |
 | Dataset | Raw video files (mixed content — interviews, field footage, events) |
 | Dataset | Preprocessed text chunks with embeddings and knowledge graph |
-| Models/Apps | NIM Embedder (Llama 3.2 NeMoRetriever 1B VLM Embed), NIM LLM (Llama 3.1 8B Instruct), VILA VLM, Parakeet ASR |
+| Models/Apps | NIM Embedder (Llama Nemotron Embed VL 1B v2), NIM LLM (Llama 3.1 8B Instruct), VILA VLM, Parakeet ASR |
 
 **Show:**
 - End-to-end video ingestion — upload a video, get it indexed across visual and audio modalities

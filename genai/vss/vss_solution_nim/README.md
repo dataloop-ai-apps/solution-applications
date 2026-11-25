@@ -10,7 +10,7 @@ query the processed content using natural language.
 - Splits videos into 15-second segments
 - Visual branch: VILA VLM generates search-friendly video descriptions
 - Audio branch: Parakeet ASR transcribes speech to text
-- Embeds all text chunks using NIM Llama 3.2 NeMoRetriever
+- Embeds all text chunks using NIM Llama Nemotron Embed VL 1B v2
 - Builds a knowledge graph via LLM entity/relationship extraction (Graph RAG)
 
 **Retrieval Pipeline:**
